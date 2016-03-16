@@ -100,7 +100,7 @@ public class WeatherActivity extends Activity implements OnClickListener {
 					.getDefaultSharedPreferences(this);
 			String weatherCode = prefs.getString("weather_code", "");
 			if (!TextUtils.isEmpty(weatherCode))
-				queryWeatherCode(weatherCode);
+				queryWeatherInfo(weatherCode);
 			break;
 
 		default:
@@ -185,5 +185,5 @@ public class WeatherActivity extends Activity implements OnClickListener {
 		weatherInfoLayout.setVisibility(View.VISIBLE);
 		cityNameText.setVisibility(View.VISIBLE);
 	}
-
+	
 }
